@@ -2,6 +2,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { addToCart } from "../features/cartSlice";
 
 function ProductCard() {
+  // fetching data from redux store
   const items = useSelector((state) => state.allCart.items);
 
   const dispatch = useDispatch();
